@@ -56,7 +56,7 @@ app.set('view engine', 'handlebars');
 // Middleware para procesar datos POST
 app.use(express.urlencoded({ extended: false }));
 const options = {
-  mongoUrl: 'mongodb+srv://Gonza81:Mama3823@cluster0.zalvman.mongodb.net/TareaElectricos',
+  mongoUrl: MONGODB_URI,
   // otras opciones
 };   
 // Configurar sesión 
