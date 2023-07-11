@@ -59,7 +59,7 @@ export function TaskFormPage() {
   return (
     <Card>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Label htmlFor="title">Title</Label>
+        <Label htmlFor="title">Tablero</Label>
         <Input
           type="text"
           name="title"
@@ -68,10 +68,10 @@ export function TaskFormPage() {
           autoFocus
         />
         {errors.title && (
-          <p className="text-red-500 text-xs italic">Please enter a title.</p>
+          <p className="text-red-500 text-xs italic">Por favor ingrese un titulo.</p>
         )}
 
-        <Label htmlFor="description">Description</Label>
+        <Label htmlFor="description">Descripción</Label>
         <Textarea
           name="description"
           id="description"
