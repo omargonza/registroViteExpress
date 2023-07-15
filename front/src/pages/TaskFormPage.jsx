@@ -57,33 +57,39 @@ export function TaskFormPage() {
   }, []);
 
   return (
-    <Card>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <Label htmlFor="title">Tablero</Label>
-        <Input
-          type="text"
-          name="title"
-          placeholder="Title"
-          {...register("title")}
-          autoFocus
-        />
-        {errors.title && (
-          <p className="text-red-500 text-xs italic">Por favor ingrese un titulo.</p>
-        )}
-
-        <Label htmlFor="description">Descripción</Label>
-        <Textarea
-          name="description"
-          id="description"
-          rows="3"
-          placeholder="Description"
-          {...register("description")}
-        ></Textarea>
-
-        <Label htmlFor="date">Date</Label>
-        <Input type="date" name="date" {...register("date")} />
-        <Button>Save</Button>
-      </form>
-    </Card>
+    <Card className="bg-white p-4 shadow-md rounded-md">
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Label htmlFor="title" className="font-bold mb-2">Tablero</Label>
+      <Input
+        type="text"
+        name="title"
+        placeholder="Title"
+        {...register("title")}
+        autoFocus
+        className="border border-gray-300 px-2 py-1 rounded-md w-full mb-2"
+      />
+      {errors.title && (
+        <p className="text-red-500 text-xs italic">Por favor ingrese un título.</p>
+      )}
+  
+      <Label htmlFor="description" className="font-bold mb-2">Descripción</Label>
+      <Textarea
+        name="description"
+        id="description"
+        rows="3"
+        placeholder="Description"
+        {...register("description")}
+        className="border border-gray-300 px-2 py-1 rounded-md w-full mb-2"
+      ></Textarea>
+  
+      <Label htmlFor="date" className="font-bold mb-2">Date</Label>
+      <Input type="date" name="date" {...register("date")} className="border border-gray-300 px-2 py-1 rounded-md w-full mb-2" />
+  
+      <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        Guardar
+      </Button>
+    </form>
+  </Card>
+  
   );
 }

@@ -1,11 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Importa los estilos generados por Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+/* Añade tus estilos personalizados aquí */
 body {
-  background: #202020;
+  background: #BEE707;
   color: white;
+  
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  background-position: center top 75%;
+  height: 75vh;
 }
+
 
 .content-container {
   height: calc(100vh - theme("spacing.20"));

@@ -17,7 +17,7 @@ export function TasksPage() {
           <div>
             <ImFileEmpty className="text-6xl text-gray-400 m-auto my-2" />
             <h1 className="font-bold text-xl">
-              aún n ohay tareas, por favor agregue una !
+              aún no hay tareas, por favor agregue una !
             </h1>
           </div>
         </div>

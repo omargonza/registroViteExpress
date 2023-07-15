@@ -8,7 +8,7 @@ set -e
 npm run build
 
 # navigate into the build directory
-cd dist
+cd registro_tarea_electricos
 
 
 # if yiu deploying to a custom domain
