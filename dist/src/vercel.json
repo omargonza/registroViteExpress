@@ -1,0 +1,14 @@
+{
+    "version":2,
+    "name": "tareaaElectricos",
+    "builds": [
+        {
+            "src": "app.js","use":"@vercel/node"
+        }
+    ],
+    "roues":[
+        {
+            "src":"/(.*)","dest":"/app.js"
+        }
+    ]
+}
